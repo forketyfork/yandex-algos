@@ -1,10 +1,10 @@
 package com.forketyfork.yandexalgo.assignment1;
 
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @see <a href="https://contest.yandex.ru/contest/27393/problems/F/">F. Расстановка ноутбуков</a>
@@ -54,14 +54,14 @@ public class Notebooks {
 
     public static List<Integer> getTableSize(int x1, int y1, int x2, int y2) {
 
-        List<Solution> solutions = Arrays.asList(
+        return Stream.of(
                 new Solution(Math.max(x1, x2), y1 + y2),
                 new Solution(x1 + x2, Math.max(y1, y2)),
                 new Solution(Math.max(x1, y2), y1 + x2),
                 new Solution(x1 + y2, Math.max(y1, x2))
-        );
-        Collections.sort(solutions);
-        return solutions.get(0).toList();
+        ).min(Comparator.naturalOrder())
+                .orElseThrow()
+                .toList();
     }
 
 }
