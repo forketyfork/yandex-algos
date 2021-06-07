@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/G/">G. Наибольшее произведение двух чисел</a>
+ */
 public class MaxMult {
 
     public static void main(String[] args) {

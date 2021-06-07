@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment2;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/E/">E. Чемпионат по метанию коровьих лепешек</a>
+ */
 public class Cows {
 
     public static void main(String[] args) {

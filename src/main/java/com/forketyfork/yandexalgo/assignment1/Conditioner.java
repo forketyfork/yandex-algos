@@ -3,6 +3,9 @@ package com.forketyfork.yandexalgo.assignment1;
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/A/">A. Кондиционер</a>
+ */
 public class Conditioner {
 
     private enum Mode {

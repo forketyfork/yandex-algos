@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/A/">A. Возрастает ли список?</a>
+ */
 public class Increasing {
 
     public static void main(String[] args) {

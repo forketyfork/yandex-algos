@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/C/">C. Телефонные номера</a>
+ */
 public class PhoneNumber {
 
     public static void main(String[] args) {

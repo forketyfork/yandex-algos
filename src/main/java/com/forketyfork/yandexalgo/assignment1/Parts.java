@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment1;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/G/">G. Детали</a>
+ */
 public class Parts {
 
     public static void main(String[] args) {

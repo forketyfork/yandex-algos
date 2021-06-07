@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment1;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/I/">I. Узник замка Иф</a>
+ */
 public class If {
 
     public static void main(String[] args) {

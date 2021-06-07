@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/J/">J. Система линейных уравнений - 2</a>
+ */
 public class LinearEquations2 {
 
     public static void main(String[] args) {

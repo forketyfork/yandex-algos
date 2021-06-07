@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment2;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/I/">I. Сапер</a>
+ */
 public class Minefield {
 
     public static void main(String[] args) {

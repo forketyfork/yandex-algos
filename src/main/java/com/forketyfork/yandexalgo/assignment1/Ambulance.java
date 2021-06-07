@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/E/">E. Скорая помощь</a>
+ */
 public class Ambulance {
 
     public static void main(String[] args) {
@@ -39,7 +42,7 @@ public class Ambulance {
                 return List.of(1, 0);
             }
             else if (k1 <= k2) {
-                return List.of(p2, n2);
+                return List.of(1, 1);
             }
             else {
                 return List.of(0, 0);

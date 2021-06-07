@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/H/">H. Метро</a>
+ */
 public class Subway {
 
     public static void main(String[] args) {

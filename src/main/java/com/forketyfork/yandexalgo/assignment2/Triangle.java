@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/J/">J. Треугольник Максима</a>
+ */
 public class Triangle {
 
-    private static class Record {
+    static class Record {
 
         private final double value;
         private final boolean closer;

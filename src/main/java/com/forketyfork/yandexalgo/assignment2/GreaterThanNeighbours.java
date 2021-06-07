@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/D/">D. Больше своих соседей</a>
+ */
 public class GreaterThanNeighbours {
 
     public static void main(String[] args) {

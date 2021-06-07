@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment2;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/F/">F. Симметричная последовательность</a>
+ */
 public class SymmetricSequence {
 
     public static void main(String[] args) {

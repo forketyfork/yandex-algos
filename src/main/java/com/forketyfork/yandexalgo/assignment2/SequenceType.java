@@ -5,6 +5,9 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/B/">B. Определить вид последовательности</a>
+ */
 public class SequenceType {
 
     public static void main(String[] args) {

@@ -2,6 +2,9 @@ package com.forketyfork.yandexalgo.assignment1;
 
 import java.util.Scanner;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27393/problems/B/">B. Треугольник</a>
+ */
 public class Triangle {
 
     public static void main(String[] args) {

@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * @see <a href="https://contest.yandex.ru/contest/27472/problems/H/">H. Наибольшее произведение трёх чисел</a>
+ */
 public class MaxThreeMult {
 
     public static void main(String[] args) {
@@ -33,10 +36,10 @@ public class MaxThreeMult {
 
         int max1pos = 0, max2pos = 0, max3pos = 0, min1neg = 0, min2neg = 0,
                 max1neg = Integer.MIN_VALUE, max2neg = Integer.MIN_VALUE, max3neg = Integer.MIN_VALUE;
-        int nonnegCount = 0;
+        int nonNegCount = 0;
         for (int value : list) {
             if (value >= 0) {
-                nonnegCount++;
+                nonNegCount++;
             }
             if (value > 0) {
                 if (value > max1pos) {
@@ -75,7 +78,7 @@ public class MaxThreeMult {
             }
         }
 
-        if (nonnegCount == 0) {
+        if (nonNegCount == 0) {
             return List.of(max1neg, max2neg, max3neg);
         }
         long threePosMul = (long) max1pos * max2pos * max3pos;
