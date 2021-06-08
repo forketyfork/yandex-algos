@@ -19,9 +19,11 @@ public class Dice {
     public static void main(String[] args) throws IOException {
 
         var streamTokenizer = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
+
         streamTokenizer.nextToken();
         int size1 = (int) streamTokenizer.nval;
         int[] numbers1 = new int[size1];
+
         streamTokenizer.nextToken();
         int size2 = (int) streamTokenizer.nval;
         int[] numbers2 = new int[size2];
@@ -35,9 +37,9 @@ public class Dice {
             numbers2[i] = (int) streamTokenizer.nval;
         }
 
-        PrintWriter writer = new PrintWriter(System.out);
-
         var result = intersect(numbers1, numbers2);
+
+        PrintWriter writer = new PrintWriter(System.out);
 
         printList(writer, result.intersect);
         printList(writer, result.unique1);
@@ -48,7 +50,10 @@ public class Dice {
 
     private static void printList(PrintWriter writer, List<Integer> list) {
         writer.println(list.size());
-        list.forEach(element -> writer.print(element + " "));
+        list.forEach(element -> {
+            writer.print(element);
+            writer.print(' ');
+        });
         writer.println();
     }
 
