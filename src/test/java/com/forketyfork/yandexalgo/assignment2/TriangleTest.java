@@ -40,7 +40,7 @@ class TriangleTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).isEqualTo(Triangle.getRange(testCase.records));
+        assertThat(Triangle.getRange(testCase.records)).isEqualTo(testCase.expected);
     }
 
     private static List<Record> readFromFile(Path path) throws IOException {

@@ -33,9 +33,9 @@ class DiceTest {
     @MethodSource("source")
     void test(TestCase testCase) {
         var result = Dice.intersect(testCase.numbers1, testCase.numbers2);
-        assertThat(testCase.expectedIntersect).isEqualTo(result.getIntersect());
-        assertThat(testCase.expectedUnique1).isEqualTo(result.getUnique1());
-        assertThat(testCase.expectedUnique2).isEqualTo(result.getUnique2());
+        assertThat(result.getIntersect()).isEqualTo(testCase.expectedIntersect);
+        assertThat(result.getUnique1()).isEqualTo(testCase.expectedUnique1);
+        assertThat(result.getUnique2()).isEqualTo(testCase.expectedUnique2);
     }
 
 }

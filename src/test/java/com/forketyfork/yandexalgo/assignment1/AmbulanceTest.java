@@ -19,7 +19,7 @@ class AmbulanceTest {
         private final int p2;
         private final int n2;
 
-        private final List<Integer> result;
+        private final List<Integer> expected;
 
     }
 
@@ -41,14 +41,13 @@ class AmbulanceTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.result).isEqualTo(
-                Ambulance.calculate(
-                        testCase.k1,
-                        testCase.m,
-                        testCase.k2,
-                        testCase.p2,
-                        testCase.n2
-                ));
+        assertThat(Ambulance.calculate(
+                testCase.k1,
+                testCase.m,
+                testCase.k2,
+                testCase.p2,
+                testCase.n2
+        )).isEqualTo(testCase.expected);
     }
 
 }

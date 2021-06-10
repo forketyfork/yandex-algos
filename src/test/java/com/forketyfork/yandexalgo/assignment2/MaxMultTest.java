@@ -1226,7 +1226,7 @@ class MaxMultTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).isEqualTo(MaxMult.maxMult(testCase.numbers));
+        assertThat(MaxMult.maxMult(testCase.numbers)).isEqualTo(testCase.expected);
     }
 
 }

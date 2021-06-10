@@ -29,7 +29,7 @@ class CowsTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).isEqualTo(Cows.maximumPlace(testCase.places));
+        assertThat(Cows.maximumPlace(testCase.places)).isEqualTo(testCase.expected);
     }
 
 }

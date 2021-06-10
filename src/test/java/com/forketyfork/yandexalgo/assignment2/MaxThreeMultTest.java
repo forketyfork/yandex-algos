@@ -110,7 +110,7 @@ class MaxThreeMultTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).containsExactlyInAnyOrderElementsOf(MaxThreeMult.max3Mult(testCase.numbers));
+        assertThat(MaxThreeMult.max3Mult(testCase.numbers)).containsExactlyInAnyOrderElementsOf(testCase.expected);
     }
 
     private static List<Integer> readFromFile(Path path) throws IOException {

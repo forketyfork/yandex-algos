@@ -33,7 +33,7 @@ class IntersectTest {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).isEqualTo(Intersect.intersect(testCase.numbers1, testCase.numbers2));
+        assertThat(Intersect.intersect(testCase.numbers1, testCase.numbers2)).isEqualTo(testCase.expected);
     }
 
 }

@@ -33,8 +33,12 @@ class LinearEquations2Test {
     @ParameterizedTest
     @MethodSource("source")
     void test(TestCase testCase) {
-        assertThat(testCase.expected).isEqualTo(
-                LinearEquations2.solve(testCase.a, testCase.b, testCase.c, testCase.d, testCase.e, testCase.f));
+        assertThat(LinearEquations2.solve(testCase.a,
+                testCase.b,
+                testCase.c,
+                testCase.d,
+                testCase.e,
+                testCase.f)).isEqualTo(testCase.expected);
     }
 
 }
