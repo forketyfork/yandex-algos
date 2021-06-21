@@ -25,8 +25,9 @@ public class Minefield {
         }
 
         int[][] field = field(rows, cols, bs);
-        for (int[] row : field) {
-            for (int cell : row) {
+        for (int i = 1; i < rows + 1; i++) {
+            for (int j = 1; j < cols + 1; j++) {
+                int cell = field[i][j];
                 if (cell == -1) {
                     System.out.print("* ");
                 }
@@ -39,41 +40,26 @@ public class Minefield {
     }
 
     public static int[][] field(int rows, int cols, int[][] bs) {
-        int[][] field = new int[rows][cols];
+        int[][] field = new int[rows + 2][cols + 2];
+
+        int[] dx = {-1, 0, 1, -1, 1, -1, 0, 1};
+        int[] dy = {-1, -1, -1, 0, 0, 1, 1, 1};
 
         for (int[] b : bs) {
-            field[b[0] - 1][b[1] - 1] = -1;
+            field[b[0]][b[1]] = -1;
         }
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+        for (int i = 1; i < rows + 1; i++) {
+            for (int j = 1; j < cols + 1; j++) {
                 if (field[i][j] == -1) {
                     continue;
                 }
                 int sum = 0;
-                if (i > 0 && field[i - 1][j] == -1) {
-                    sum++;
-                }
-                if (i < rows - 1 && field[i + 1][j] == -1) {
-                    sum++;
-                }
-                if (j > 0 && field[i][j - 1] == -1) {
-                    sum++;
-                }
-                if (j < cols - 1 && field[i][j + 1] == -1) {
-                    sum++;
-                }
-                if (i > 0 && j > 0 && field[i - 1][j - 1] == -1) {
-                    sum++;
-                }
-                if (i > 0 && j < cols - 1 && field[i - 1][j + 1] == -1) {
-                    sum++;
-                }
-                if (i < rows - 1 && j > 0 && field[i + 1][j - 1] == -1) {
-                    sum++;
-                }
-                if (i < rows - 1 && j < cols - 1 && field[i + 1][j + 1] == -1) {
-                    sum++;
+
+                for (int k = 0; k < 8; k++) {
+                    if (field[i + dx[k]][j + dy[k]] == -1) {
+                        sum++;
+                    }
                 }
                 field[i][j] = sum;
             }
