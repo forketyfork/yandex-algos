@@ -5,3 +5,5 @@
 [![Java](https://img.shields.io/badge/language-Java-orange.svg)](https://www.oracle.com/java/)
 
 [Тренировки по алгоритмам](https://yandex.ru/yaintern/algorithm-training)
+
+This repository contains solutions to algorithmic problems from the Yandex Algorithm Training course.
