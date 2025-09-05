@@ -13,7 +13,7 @@
     <maven.compiler.target>17</maven.compiler.target>
 
     <junit.version>5.13.4</junit.version>
-    <lombok.version>1.18.38</lombok.version>
+    <lombok.version>1.18.40</lombok.version>
     <assertj.version>3.27.4</assertj.version>
 
     <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
