@@ -14,7 +14,7 @@
 
     <junit.version>5.13.4</junit.version>
     <lombok.version>1.18.42</lombok.version>
-    <assertj.version>3.27.5</assertj.version>
+    <assertj.version>3.27.6</assertj.version>
 
     <maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
   </properties>
